@@ -15,14 +15,11 @@ column1 = dbc.Col(
     [
         dcc.Markdown(
             """
-        
-            ## Your Value Proposition
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            ## Wine App
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            ✅ This app will predict the wine score rating of a wine based on it's chemistry.
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
 
             """
         ),
@@ -30,6 +27,7 @@ column1 = dbc.Col(
     ],
     md=4,
 )
+html.Img(src='assets/jeff-siepman-hK9hIPgF3QU-unsplash.jpg', className='img-fluid')
 
 gapminder = px.data.gapminder()
 fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
